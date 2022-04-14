@@ -1,0 +1,12 @@
+C:\Users\daguirre\source\repos\CSharpExercisesWithTDD\CSharpExercisesWithTDD\bin\Debug\net6.0\CSharpExercisesWithTDD.deps.json
+C:\Users\daguirre\source\repos\CSharpExercisesWithTDD\CSharpExercisesWithTDD\bin\Debug\net6.0\CSharpExercisesWithTDD.dll
+C:\Users\daguirre\source\repos\CSharpExercisesWithTDD\CSharpExercisesWithTDD\bin\Debug\net6.0\ref\CSharpExercisesWithTDD.dll
+C:\Users\daguirre\source\repos\CSharpExercisesWithTDD\CSharpExercisesWithTDD\bin\Debug\net6.0\CSharpExercisesWithTDD.pdb
+C:\Users\daguirre\source\repos\CSharpExercisesWithTDD\CSharpExercisesWithTDD\obj\Debug\net6.0\CSharpExercisesWithTDD.csproj.AssemblyReference.cache
+C:\Users\daguirre\source\repos\CSharpExercisesWithTDD\CSharpExercisesWithTDD\obj\Debug\net6.0\CSharpExercisesWithTDD.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\daguirre\source\repos\CSharpExercisesWithTDD\CSharpExercisesWithTDD\obj\Debug\net6.0\CSharpExercisesWithTDD.AssemblyInfoInputs.cache
+C:\Users\daguirre\source\repos\CSharpExercisesWithTDD\CSharpExercisesWithTDD\obj\Debug\net6.0\CSharpExercisesWithTDD.AssemblyInfo.cs
+C:\Users\daguirre\source\repos\CSharpExercisesWithTDD\CSharpExercisesWithTDD\obj\Debug\net6.0\CSharpExercisesWithTDD.csproj.CoreCompileInputs.cache
+C:\Users\daguirre\source\repos\CSharpExercisesWithTDD\CSharpExercisesWithTDD\obj\Debug\net6.0\CSharpExercisesWithTDD.dll
+C:\Users\daguirre\source\repos\CSharpExercisesWithTDD\CSharpExercisesWithTDD\obj\Debug\net6.0\ref\CSharpExercisesWithTDD.dll
+C:\Users\daguirre\source\repos\CSharpExercisesWithTDD\CSharpExercisesWithTDD\obj\Debug\net6.0\CSharpExercisesWithTDD.pdb
