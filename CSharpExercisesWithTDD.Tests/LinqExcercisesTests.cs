@@ -167,5 +167,17 @@ namespace CSharpExercisesWithTDD.Tests
         }
 
         #endregion Medium
+
+        #region Hard
+
+        [Test, Description(@"Days Names - Using Enum.GetValues, return the days of the week as a string array. Hint: typeof(DayOfWeek)
+            Exercise: https://www.csharpexercises.com/linq/exercise/days-names ")]
+        [TestCase("Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday")]
+        public void DaysNames_StringArrayReturned_WithDaysOfWeek(string output)
+        {
+            Assert.AreEqual(output, LinqExercises.DaysNames());
+        }
+
+        #endregion Hard
     }
 }

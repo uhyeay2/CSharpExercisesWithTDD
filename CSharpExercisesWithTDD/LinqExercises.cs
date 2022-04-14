@@ -182,5 +182,22 @@
         }
 
         #endregion Medium
+
+        #region Hard
+
+        /// <summary>
+        /// Days Names
+        /// Using Enum.GetValues() - Return days of the week in a string array
+        /// https://www.csharpexercises.com/linq/exercise/days-names
+        /// </summary>
+        /// <returns></returns>
+        /// <exception cref="NotImplementedException"></exception>
+        public static string DaysNames()
+        {
+            return Enum.GetValues(typeof(DayOfWeek)).Cast<DayOfWeek>().Select(x => x.ToString())
+                .Aggregate((a, b) => a + $", {b}").ToString();
+        }
+
+        #endregion Hard
     }
 }
