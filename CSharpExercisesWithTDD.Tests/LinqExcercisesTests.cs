@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using System;
 
 namespace CSharpExercisesWithTDD.Tests
 {
@@ -12,7 +13,7 @@ namespace CSharpExercisesWithTDD.Tests
         [TestCase(new string[] { "plane", "ferry", "car", "bike" }, "plane")]
         public void LastWordContainingLetter_GivenStringArray_ReturnLastWord_AfterSortingAlphebetically_ThatContainsE(string[] input, string output)
         {
-            Assert.AreEqual(output, LinqExercises.LastWordContainingLetter(input));
+            throw new NotImplementedException();
         }
 
         [Test, Description(@"Minimum Length - Given an array of strings, Write a query that returns any strings that are
@@ -20,7 +21,7 @@ namespace CSharpExercisesWithTDD.Tests
         [TestCase(new string[] { "computer", "usb" }, new string[] { "COMPUTER" })]
         public void MinimumLength_GivenStringArray_ReturnWordsLongerThanFiveChars_InUppercase(string[] input, string[] output)
         {
-            Assert.AreEqual(output, LinqExercises.MinimumLength(input));
+            throw new NotImplementedException();
         }
 
         [Test, Description(@"Numbers From Range - Given an array of integers, Write a query that returns list of numbers
@@ -28,7 +29,7 @@ namespace CSharpExercisesWithTDD.Tests
         [TestCase(new int[] { 67, 92, 153, 15 }, new int[] { 67, 92 })]
         public void NumbersFromRange_GivenIntArray_ReturnsNumbersFrom30To100_AsList(int[] input, int[] output)
         {
-            Assert.AreEqual(output, LinqExercises.NumbersFromRange(input));
+            throw new NotImplementedException();
         }
 
         [Test, Description(@"Replace substring - Given an array of strings, Write a query that replaces 'ea' substring
@@ -36,7 +37,7 @@ namespace CSharpExercisesWithTDD.Tests
         [TestCase(new string[] { "learn", "current", "deal" }, new string[] { "l*rn", "current", "d*l" })]
         public void ReplaceSubstring_GivenStringArray_ReturnW_ea_ReplacedWith_Asterisks(string[] input, string[] output)
         {
-            Assert.AreEqual(output, LinqExercises.ReplaceSubstring(input));
+            throw new NotImplementedException();
         }
 
         [Test, Description(@"Select Words - Given an array of strings, Write a query that returns words starting with
@@ -44,7 +45,7 @@ namespace CSharpExercisesWithTDD.Tests
         [TestCase(new string[] { "mum", "amsterdam", "bloom" }, new string[] { "amsterdam" })]
         public void SelectWords_GivinStringArray_ReturnsWords_StartingWithA_EndingWithM(string[] input, string[] output)
         {
-            Assert.AreEqual(output, LinqExercises.SelectWords(input));
+            throw new NotImplementedException();
         }
 
         [Test, Description(@"Square Greater Than 20 - Given an array of integers, Write a query that returns numbers
@@ -52,7 +53,7 @@ namespace CSharpExercisesWithTDD.Tests
         [TestCase(new int[] { 7, 2, 30 }, new string[] { "7 - 49", "30 - 900" })]
         public void SquareGreaterThanTwenty_GivenIntArray_ReturnNumbersAndTheirSquare_IfSquareIsGreaterThanTwenty(int[] input, string[] output)
         {
-            Assert.AreEqual(output, LinqExercises.SquareGreaterThanTwenty(input));
+            throw new NotImplementedException();
         }
 
         [Test, Description(@"Top 5 Numbers - Given an array of integers, Write a query that returns top 5 numbers from the
@@ -60,7 +61,7 @@ namespace CSharpExercisesWithTDD.Tests
         [TestCase(new int[] { 78, -9, 0, 23, 54, 21, 7, 86 }, new int[] { 86, 78, 54, 23, 21, })]
         public void TopFiveNumbers_GivenIntArray_ReturnTopFive_FromArray_InDescendingOrder(int[] input, int[] output)
         {
-            Assert.AreEqual(output, LinqExercises.TopFiveNumbers(input));
+            throw new NotImplementedException();
         }
 
         #endregion Easy
@@ -122,7 +123,7 @@ namespace CSharpExercisesWithTDD.Tests
         [TestCaseSource(nameof(_decryptNumberSource))]
         public void DecryptNumber_GivenRandomSpecialChars_DecryptUsingKeyboardNumRow_ReturnNumbersAsString(string input, string output)
         {
-            Assert.AreEqual(output, LinqExercises.DecryptNumber(input));
+            throw new NotImplementedException();
         }
 
         [Test, Description(@"Frequency of Letters - Given string, Write a query that returns letters and their frequencies in the string.
@@ -130,7 +131,7 @@ namespace CSharpExercisesWithTDD.Tests
         [TestCaseSource(nameof(_frequencyOfLettersSource))]
         public void FrequencyOfLetters_GivenString_ReturnLetter_AndItsFrequency(string input, string output)
         {
-            Assert.AreEqual(output, LinqExercises.FrequencyOfLetters(input));
+            throw new NotImplementedException();
         }
 
         [Test, Description(@"Most Frequent Character - Given a string, Write a query that returns most frequent character
@@ -139,7 +140,7 @@ namespace CSharpExercisesWithTDD.Tests
         [TestCaseSource(nameof(_mostFrequentCharacterSource))]
         public void MostFrequentCharacter_GivenString_ReturnMostFrequentCharacter(string input, char output)
         {
-            Assert.AreEqual(output, LinqExercises.MostFrequentCharacter(input));
+            throw new NotImplementedException();
         }
 
         [Test, Description(@"Shuffle An Array - Given an array of integers, Write a query that shuffles assorted array,
@@ -147,7 +148,7 @@ namespace CSharpExercisesWithTDD.Tests
         [TestCaseSource(nameof(_shuffleAnArraySource))]
         public void ShuffleAnArray_GivenIntArray_ReturnsRandomlyShuffledArray(int[] input)
         {
-            Assert.AreNotEqual(input, LinqExercises.ShuffleAnArray(input));
+            throw new NotImplementedException();
         }
 
         [Test, Description(@"Unique Values - Given an array of strings, Return an array that contains only unique (non-duplicate) strings.
@@ -155,7 +156,7 @@ namespace CSharpExercisesWithTDD.Tests
         [TestCaseSource(nameof(_uniqueValues))]
         public void UniqueValues_GivenStringArray_ReturnOnlyUniqueStrings(string[] input, string[] output)
         {
-            Assert.AreEqual(output, LinqExercises.UniqueValues(input));
+            throw new NotImplementedException();
         }
 
         [Test, Description(@"Uppercase Only - Given string, Write a query that returns only uppercase words from the string
@@ -163,7 +164,7 @@ namespace CSharpExercisesWithTDD.Tests
         [TestCaseSource(nameof(_uppercaseOnly))]
         public void UppercaseOnly_GivenString_ReturnOnlyUppercaseWords_InStringArray(string input, string[] output)
         {
-            Assert.AreEqual(output, LinqExercises.UppercaseOnly(input));
+            throw new NotImplementedException();
         }
 
         #endregion Medium
@@ -175,7 +176,7 @@ namespace CSharpExercisesWithTDD.Tests
         [TestCase("Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday")]
         public void DaysNames_StringArrayReturned_WithDaysOfWeek(string output)
         {
-            Assert.AreEqual(output, LinqExercises.DaysNames());
+            throw new NotImplementedException();
         }
 
         #endregion Hard

@@ -18,7 +18,7 @@
         /// <exception cref="NotImplementedException"></exception>
         public static string LastWordContainingLetter(string[] words)
         {
-            return words.OrderBy(w => w).LastOrDefault(w => w.Contains('e'))!;
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -30,7 +30,7 @@
         /// <returns></returns>
         public static string[] MinimumLength(string[] words)
         {
-            return words.Where(s => s.Length > 5).Select(s => s.ToUpper()).ToArray();
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -42,7 +42,7 @@
         /// <returns></returns>
         public static List<int> NumbersFromRange(int[] numbers)
         {
-            return numbers.Where(x => x > 30 && x < 100).ToList();
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -55,7 +55,7 @@
         /// <exception cref="NotImplementedException"></exception>
         public static string[] ReplaceSubstring(string[] words)
         {
-            return words.Select(s => s.Replace("ea", "*")).ToArray();
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -67,7 +67,7 @@
         /// <returns></returns>
         public static string[] SelectWords(string[] words)
         {
-            return words.Where(s => s[0] == 'a' && s[^1] == 'm').ToArray();
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -79,7 +79,7 @@
         /// <returns></returns>
         public static string[] SquareGreaterThanTwenty(int[] numbers)
         {
-            return numbers.Where(x => x * x > 20).Select(x => $"{x} - {x * x}").ToArray();
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -92,7 +92,7 @@
         /// <exception cref="NotImplementedException"></exception>
         public static int[] TopFiveNumbers(int[] numbers)
         {
-            return numbers.OrderByDescending(x => x).Take(5).ToArray();
+            throw new NotImplementedException();
         }
 
         #endregion Easy
@@ -111,7 +111,7 @@
         /// <exception cref="NotImplementedException"></exception>
         public static string DecryptNumber(string input)
         {
-            return string.Concat(input.Select(x => ")!@#$%^&*(".IndexOf(x)));
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -124,8 +124,7 @@
         /// <exception cref="NotImplementedException"></exception>
         public static string FrequencyOfLetters(string input)
         {
-            return input.Distinct().Select((x, i) => $"Letter {x} occurs {input.Count(c => c == x)} time(s)")
-                .Aggregate((a, b) => a + $", {b}").ToString();
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -138,7 +137,7 @@
         /// <exception cref="NotImplementedException"></exception>
         public static char MostFrequentCharacter(string input)
         {
-            return input.OrderByDescending(s => input.Count(c => s == c)).First();
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -152,7 +151,7 @@
         public static int[] ShuffleAnArray(int[] input)
         {
             var random = new Random();
-            return input.OrderBy(x => random.Next()).ToArray();
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -165,7 +164,7 @@
         /// <exception cref="NotImplementedException"></exception>
         public static string[] UniqueValues(string[] input)
         {
-            return input.GroupBy(x => x).Where(x => x.Count() == 1).Select(x => x.Key).ToArray();
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -178,7 +177,7 @@
         /// <exception cref="NotImplementedException"></exception>
         public static string[] UppercaseOnly(string input)
         {
-            return input.Split(' ').Where(s => s == s.ToUpper()).ToArray();
+            throw new NotImplementedException();
         }
 
         #endregion Medium
@@ -194,8 +193,7 @@
         /// <exception cref="NotImplementedException"></exception>
         public static string DaysNames()
         {
-            return Enum.GetValues(typeof(DayOfWeek)).Cast<DayOfWeek>().Select(x => x.ToString())
-                .Aggregate((a, b) => a + $", {b}").ToString();
+            throw new NotImplementedException();
         }
 
         #endregion Hard
