@@ -91,6 +91,28 @@ namespace CSharpExercisesWithTDD.Tests
             new object[]{ "abbccc", "Letter a occurs 1 time(s), Letter b occurs 2 time(s), Letter c occurs 3 time(s)"}
         };
 
+        private static readonly object[] _mostFrequentCharacterSource =
+        {
+            new object[] { "panda", 'a' },
+            new object[] { "n093nfv034nie9", 'n' },
+            new object[] { "apple", 'p'},
+            new object[] { "eisthemostecommoneletterehereeee", 'e'}
+        };
+
+        private static readonly object[] _shuffleAnArraySource =
+        {
+            new object[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 },
+            new object[] { 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 },
+            new object[] { 34, 54, 76, 43, 27, 13, 86, 92, 68, 5 },
+        };
+
+        private static readonly object[] _uniqueValues =
+        {
+            new object[] { new []{ "abc", "xyz", "klm", "xyz", "abc", "abc", "rst" }, new[]{ "klm", "rst" } },
+            new object[] { new []{ "abc", "def", "geh", "geh", "fij", "fij", "klm" }, new[]{ "abc", "def" } },
+            new object[] { new []{ "abc", "abc", "def", "geh", "geh", "fij", "rst" }, new[]{ "def", "fij", "rst" } }
+        };
+
         #endregion Test Cases for Medium Tasks
 
         [Test, Description(@"DecryptNumber - Given a string of only Special Characters, Return a number (as a string)
@@ -110,30 +132,26 @@ namespace CSharpExercisesWithTDD.Tests
             Assert.AreEqual(output, LinqExercises.FrequencyOfLetters(input));
         }
 
-        [Test, Description("Most Frequent Character - Given a string," +
-                    " Write a query that returns most frequent character in string. " +
-            " Assume that there is only one such character." +
-            "Exercise: https://www.csharpexercises.com/linq/exercise/most-frequent-character ")]
-        [TestCase("panda", 'a')]
-        [TestCase("n093nfv034nie9", 'n')]
+        [Test, Description(@"Most Frequent Character - Given a string, Write a query that returns most frequent character
+            in the string. Assume that there is only one such character.
+            Exercise: https://www.csharpexercises.com/linq/exercise/most-frequent-character ")]
+        [TestCaseSource(nameof(_mostFrequentCharacterSource))]
         public void MostFrequentCharacter_GivenString_ReturnMostFrequentCharacter(string input, char output)
         {
             Assert.AreEqual(output, LinqExercises.MostFrequentCharacter(input));
         }
 
-        [Test, Description("Shuffle An Array - Given an array of integers," +
-                            " Write a query that shuffles assorted array," +
-            " Exercise: https://www.csharpexercises.com/linq/exercise/shuffle-an-array ")]
-        [TestCase(new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 })]
+        [Test, Description(@"Shuffle An Array - Given an array of integers, Write a query that shuffles assorted array,
+            Exercise: https://www.csharpexercises.com/linq/exercise/shuffle-an-array ")]
+        [TestCaseSource(nameof(_shuffleAnArraySource))]
         public void ShuffleAnArray_GivenIntArray_ReturnsRandomlyShuffledArray(int[] input)
         {
             Assert.AreNotEqual(input, LinqExercises.ShuffleAnArray(input));
         }
 
-        [Test, Description("Unique Values - Given an array of strings," +
-            " Return an array that contains only unique (non-duplicate) strings." +
-            " Exercise: https://www.csharpexercises.com/linq/exercise/unique-values ")]
-        [TestCase(new string[] { "abc", "xyz", "klm", "xyz", "abc", "abc", "rst" }, new string[] { "klm", "rst" })]
+        [Test, Description(@"Unique Values - Given an array of strings, Return an array that contains only unique (non-duplicate) strings.
+             Exercise: https://www.csharpexercises.com/linq/exercise/unique-values ")]
+        [TestCase()]
         public void UniqueValues_GivenStringArray_ReturnOnlyUniqueStrings(string[] input, string[] output)
         {
             Assert.AreEqual(output, LinqExercises.UniqueValues(input));
