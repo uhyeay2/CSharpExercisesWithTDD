@@ -28,7 +28,7 @@
         /// </summary>
         /// <param name="words"></param>
         /// <returns></returns>
-        public static string[] MinimumInput(string[] words)
+        public static string[] MinimumLength(string[] words)
         {
             return words.Where(s => s.Length > 5).Select(s => s.ToUpper()).ToArray();
         }
